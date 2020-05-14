@@ -12614,7 +12614,37 @@ __webpack_require__.r(__webpack_exports__);
  // Scripts
 
 function app() {
-  vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.devtools = true; // eslint-disable-next-line
+  vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.devtools = true;
+  vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('job-view', {
+    data: function data() {
+      return {
+        availableJobs: 3
+      };
+    }
+  });
+  vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('job-list', {
+    template: "\n      <div>\n        <job v-for=\"job in jobs\"> {{ job.name }} </job> \n      </div> \n    ",
+    data: function data() {
+      return {
+        jobs: [{
+          name: 'Frontend Developer',
+          locatie: 'Maastricht',
+          salaris: '3400'
+        }, {
+          name: 'Designer',
+          locatie: 'Sittard',
+          salaris: '3100'
+        }, {
+          name: 'Backend Developer',
+          locatie: 'Roermond',
+          salaris: '3400'
+        }]
+      };
+    }
+  });
+  vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('job', {
+    template: '<li><slot></slot></li>'
+  }); // eslint-disable-next-line
 
   new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     el: '#app',

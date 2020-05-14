@@ -8,7 +8,10 @@
 </head>
 <body>
     <main id="app">
-     
+        <job-view inline-template>
+            <h1>Aantal vacatures vrij: {{ availableJobs }}</h1>
+        </job-view>
+        <job-list></job-list>
     </main>
 
 <script src="dist/js/app.js"></script>
