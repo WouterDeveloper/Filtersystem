@@ -14,15 +14,31 @@ export default function app() {
   Vue.component('job-list', {
     template: `
       <div>
-        <job v-for="job in jobs"> {{ job.name }} </job> 
+        <job v-for="job in jobs"> 
+          <h2>{{ job.title }} </h2>
+          <p> {{ job.information }}
+        </job> 
       </div> 
     `,
     data() {
       return {
         jobs: [
-          { name: 'Frontend Developer', locatie: 'Maastricht', salaris: '3400' },
-          { name: 'Designer', locatie: 'Sittard', salaris: '3100' },
-          { name: 'Backend Developer', locatie: 'Roermond', salaris: '3400' },
+        {
+          title: 'Frontend Developer',
+          location: 'Maastricht',
+          salary: '3400',
+          information: 'Een prachtige baan waar je vele uitdagingen op code gebied vind',
+        },
+        {
+          title: 'Designer',
+          location: 'Sittard',
+          salary: '3100',
+        },
+        {
+          title: 'Backend Developer',
+          location: 'Roermond',
+          salary: '3400',
+        },
         ],
       };
     },

@@ -12623,21 +12623,22 @@ function app() {
     }
   });
   vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('job-list', {
-    template: "\n      <div>\n        <job v-for=\"job in jobs\"> {{ job.name }} </job> \n      </div> \n    ",
+    template: "\n      <div>\n        <job v-for=\"job in jobs\"> \n          <h2>{{ job.title }} </h2>\n          <p> {{ job.information }}\n        </job> \n      </div> \n    ",
     data: function data() {
       return {
         jobs: [{
-          name: 'Frontend Developer',
-          locatie: 'Maastricht',
-          salaris: '3400'
+          title: 'Frontend Developer',
+          location: 'Maastricht',
+          salary: '3400',
+          information: 'Een prachtige baan waar je vele uitdagingen op code gebied vind'
         }, {
-          name: 'Designer',
-          locatie: 'Sittard',
-          salaris: '3100'
+          title: 'Designer',
+          location: 'Sittard',
+          salary: '3100'
         }, {
-          name: 'Backend Developer',
-          locatie: 'Roermond',
-          salaris: '3400'
+          title: 'Backend Developer',
+          location: 'Roermond',
+          salary: '3400'
         }]
       };
     }
@@ -12663,8 +12664,8 @@ function app() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Documents\Learn\Filter_system\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! D:\Documents\Learn\Filter_system\src\css\app.scss */"./src/css/app.scss");
+__webpack_require__(/*! C:\Users\Wouter\Documents\Learn\Filter_System\Filtersystem\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Wouter\Documents\Learn\Filter_System\Filtersystem\src\css\app.scss */"./src/css/app.scss");
 
 
 /***/ })
